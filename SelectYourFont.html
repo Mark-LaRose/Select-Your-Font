@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore and choose the perfect fonts for your projects. Generate random fonts, select from a list, and save your favorites for future reference.">
+    <meta name="keywords" content="font selection, choose font, font generator, save favorite fonts, project fonts, font picker">
+    <title>Select Your Font</title>
+    <link rel="stylesheet" href="SelectYourFont.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&family=Lobster&family=Raleway:wght@300;400;700&family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&family=Ubuntu:wght@300;400;500;700&family=Playfair+Display:wght@400;500;700&family=PT+Sans:wght@400;700&family=Cabin:wght@400;500;600;700&family=Indie+Flower&family=Lora:wght@400;500;600;700&family=Nunito:wght@300;400;600;700&family=Anton&family=Baloo+2:wght@400;500;600;700&family=Cookie&family=Fjalla+One&family=Kalam:wght@400;700&family=Quicksand:wght@300;400;500;600;700&family=Sacramento&family=Shadows+Into+Light&family=Teko:wght@300;400;500;600;700&family=Zilla+Slab:wght@300;400;500;600;700&family=Chewy&family=Comfortaa:wght@300;400;500;600;700&family=Fredoka+One&family=Gloria+Hallelujah&family=Permanent+Marker&family=Press+Start+2P&family=Satisfy&family=Space+Mono:wght@400;700&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Container for font selection controls -->
+    <div class="controls">
+        <img src="images/SelectYourFont02.png" alt="Select Font" class="select-font-image">
+        <div class="font-input-container">
+            <input type="text" id="font-input" class="font-input" placeholder="Search or select a font">
+            <img src="images/magnifyingglass.png" alt="Search" class="search-icon">
+            <div id="font-list" class="font-list"></div>
+        </div>
+        <img src="images/SelectYourFont04.png" alt="Select Font Below" class="select-font-image-below">
+        <!-- Button container -->
+        <div class="button-container">
+            <button id="click-btn">
+                <p>Click Me!</p>
+            </button>
+        </div>
+    </div>
+
+    <!-- Container to display the selected font -->
+    <div id="font-display" class="font-display">
+        <input type="text" id="sample-text-input" class="sample-text-input" maxlength="12" placeholder="Example">
+        <span id="sample-text" class="sample-text">Sample</span>
+    </div>
+
+    <!-- Input container for user text -->
+    <div class="input-container">
+        <input type="text" id="user-input" class="user-input" placeholder="Type something">
+    </div>
+
+    <!-- Button to save the current font as a favorite -->
+    <button id="favorite-btn" class="favorite-btn">&#9733;</button>
+
+    <!-- Container for displaying favorite fonts -->
+    <div class="favorites-container">
+        <img src="images/Favorite.png" alt="Favorites" class="favorites-header">
+        <div id="favorites-list" class="favorites-list"></div>
+    </div>
+
+    <!-- Container for welcome message -->
+    <div class="welcome-container">
+        <img src="images/Welcome.png" alt="Welcome" class="welcome-header">
+        <!-- Welcome message text -->
+        <div class="welcome-message">
+            <p>This application is perfect for helping you choose fonts for your projects. You can generate random fonts, select a specific font using the font picker, and save your favorite fonts for future reference. Click on a favorite font to view it again, or remove it from the list if you no longer need it. Also, you can drag and drop your favorites to rearrange their order.</p>
+            <p>Have fun exploring and finding the perfect fonts for your needs!</p>
+        </div>
+    </div>
+
+    <script src="SelectYourFont.js"></script>
+</body>
+</html>
