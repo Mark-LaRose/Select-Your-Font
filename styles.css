@@ -1,0 +1,450 @@
+/* Styles Sheet for SelectYourFont */
+
+body {
+    background: url('images/SelectYourFont01.png') no-repeat center center fixed;
+    background-size: 100% 100%;
+    background-color: #FFFFFF;
+}
+
+/* Styling for the controls container */
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Styling for the button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+/* Styling for the click button */
+#click-btn {
+    padding: 20px 80px;
+    border: 3px solid #5897c6;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    top: 720px;
+    left: 0px;
+    color: #5897c6;
+}
+
+/* Hover effect for the click button */
+#click-btn:hover {
+    background-color: white;
+    color: #5897c6;
+    border-color: #5897c6;
+}
+
+/* Styling for the button text */
+button p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Styling for the input container */
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Styling for the user input field */
+.user-input {
+    position: relative;
+    left: 0px;
+    top: 620px;
+    border: 2px solid black;
+    width: 300px;
+    height: 60px;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styling for the welcome header image */
+.welcome-header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0px;
+}
+
+/* Styling for the welcome message */
+.welcome-message {
+    margin-top: 0px;
+    width: 80%;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Welcome container styles */
+.welcome-container {
+    position: absolute;
+    left: 60px;
+    top: 265px;
+    width: 240px;
+    height: 500px;
+    border: 5px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5897c6;
+}
+
+/* Styling for the search icon */
+.search-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+    top: 725px;
+    left: 0px;
+    margin-left: -30px;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* Media Query for devices with a minimum width of 768px */
+@media (min-width: 768px) {
+
+    .welcome-container {
+        position: absolute;
+        left: 10px;
+        top: 270px;
+        width: 200px;
+        height: 540px;
+        border: 5px solid black;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #5897c6;
+    }
+
+    .welcome-header {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0px;
+    }
+    
+    .welcome-message {
+        margin-top: 0px;
+        width: 80%;
+        color: white;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    .user-input {
+        position: relative;
+        left: 0px;
+        top: 840px;
+        border: 2px solid black;
+        width: 600px;
+        height: 100px;
+        font-size: 60px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .search-icon {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        position: relative;
+        top: -55px;
+        left: 0px;
+        margin-left: -30px;
+    }
+
+    #click-btn {
+        padding: 20px 72px;
+        border: 3px solid #5897c6;
+        background-color: black;
+        cursor: pointer;
+        border-radius: 15px;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        position: relative;
+        top: 80px;
+        left: 0px;
+        color: #5897c6;
+    }
+    
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* Media Query for devices with a minimum width of 1024px */
+@media (min-width: 1024px) {
+
+    .welcome-container {
+        position: absolute;
+        left: 10px;
+        top: 140px;
+        width: 200px;
+        height: 540px;
+        border: 5px solid black;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #5897c6;
+    }
+
+    .welcome-header {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0px;
+    }
+    
+    .welcome-message {
+        margin-top: 0px;
+        width: 80%;
+        color: white;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    .user-input {
+        position: relative;
+        left: 0px;
+        top: 580px;
+        border: 2px solid black;
+        width: 440px;
+        height: 80px;
+        font-size: 60px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .search-icon {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        position: relative;
+        top: -55px;
+        left: 0px;
+        margin-left: -30px;
+    }
+
+    #click-btn {
+        padding: 20px 72px;
+        border: 3px solid #5897c6;
+        background-color: black;
+        cursor: pointer;
+        border-radius: 15px;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        position: relative;
+        top: 180px;
+        left: 20px;
+        color: #5897c6;
+    }
+    
+}
+
+
+/* ----------------------------------------------------------------------- */
+
+
+@media (min-width: 1024px) and (max-width: 1024px) and (min-height: 1366px) and (max-height: 1366px) {
+
+    .welcome-container {
+        position: absolute;
+        left: 10px;
+        top: 390px;
+        width: 200px;
+        height: 540px;
+        border: 5px solid black;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #5897c6;
+    }
+
+    .welcome-header {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0px;
+    }
+    
+    .welcome-message {
+        margin-top: 0px;
+        width: 80%;
+        color: white;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    .user-input {
+        position: relative;
+        left: 0px;
+        top: 1040px;
+        border: 2px solid black;
+        width: 740px;
+        height: 130px;
+        font-size: 60px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .search-icon {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        position: relative;
+        top: -55px;
+        left: 0px;
+        margin-left: -30px;
+    }
+
+    #click-btn {
+        padding: 20px 72px;
+        border: 3px solid #5897c6;
+        background-color: black;
+        cursor: pointer;
+        border-radius: 15px;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        position: relative;
+        top: -120px;
+        left: 0px;
+        color: #5897c6;
+    }
+    
+}
+/* ----------------------------------------------------------------------- */
+
+
+
+/* Media Query for devices with a minimum width of 768px */
+@media (min-width: 1280px) {
+    body {
+        background-size: 100% 100%;
+    }
+
+    .controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        bottom: 400px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    #click-btn {
+        padding: 20px 80px;
+        border: 3px solid #5897c6;
+        background-color: black;
+        cursor: pointer;
+        border-radius: 15px;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        position: relative;
+        top: 120px;
+        left: 0px;
+        color: #5897c6;
+    }
+
+    #click-btn:hover {
+        background-color: white;
+        color: #5897c6;
+        border-color: #5897c6;
+    }
+
+    button p {
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .input-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .user-input {
+        position: relative;
+        left: 0px;
+        top: 670px;
+        border: 2px solid black;
+        width: 800px;
+        height: 100px;
+        font-size: 60px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .welcome-header {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 20px;
+    }
+
+    .welcome-message {
+        margin-top: 40px;
+        width: 80%;
+        color: white;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    .welcome-container {
+        position: absolute;
+        left: 70px;
+        top: 165px;
+        width: 240px;
+        height: 610px;
+        border: 5px solid black;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #5897c6;
+    }
+
+    .search-icon {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        position: relative;
+        top: 125px;
+        left: 0px;
+        margin-left: -30px;
+    }
+}
